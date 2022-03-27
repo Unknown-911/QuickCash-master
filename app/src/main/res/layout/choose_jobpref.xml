@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseJobPrefActivity"
+    android:id="@+id/choose_jobpref"
+    android:background="@drawable/wood_panel"
+    >
+
+
+    <TextView
+        android:id="@+id/etSelectJobsMainTitle"
+        android:layout_width="340dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="120dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:textColor="@color/cardview_light_background"
+        android:textColorHint="@color/cardview_light_background"
+        android:text="Select your job category preferences"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/ckbxDelivery"
+        android:layout_width="145dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:buttonTint="@color/cardview_light_background"
+        android:text="Delivery"
+        android:textColor="@color/cardview_light_background"
+        android:textColorHint="@color/cardview_light_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSelectJobsMainTitle" />
+
+    <CheckBox
+        android:id="@+id/ckbxBabysit"
+        android:layout_width="143dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:buttonTint="@color/cardview_light_background"
+        android:text="Babysitting"
+        android:textColor="@color/cardview_light_background"
+        android:textColorHint="@color/cardview_light_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ckbxDelivery" />
+
+    <CheckBox
+        android:id="@+id/ckbxOther"
+        android:layout_width="144dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:buttonTint="@color/cardview_light_background"
+        android:text="Other"
+        android:textColor="@color/cardview_light_background"
+        android:textColorHint="@color/cardview_light_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ckbxComp" />
+
+    <CheckBox
+        android:id="@+id/ckbxClean"
+        android:layout_width="143dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:buttonTint="@color/cardview_light_background"
+        android:text="Cleaning"
+        android:textColor="@color/cardview_light_background"
+        android:textColorHint="@color/cardview_light_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ckbxBabysit" />
+
+    <CheckBox
+        android:id="@+id/ckbxComp"
+        android:layout_width="141dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:buttonTint="@color/cardview_light_background"
+        android:text="Computer"
+        android:textColor="@color/cardview_light_background"
+        android:textColorHint="@color/cardview_light_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ckbxClean" />
+
+    <Button
+        android:id="@+id/btnPickJobPref"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="116dp"
+        android:fontFamily="serif"
+        android:text="SUBMIT"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/paymentInfo"
+    android:background="@drawable/wood_panel"
+    tools:context=".PaymentInfoActivity">
+
+    <Button
+        android:id="@+id/paymentSubmitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="serif"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:textColor="@color/cardview_light_background"
+        android:textColorHint="@color/cardview_light_background"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/card_number_text"
+        android:layout_width="122dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:textColor="@color/cardview_light_background"
+        android:textColorHint="@color/cardview_light_background"
+        android:text="Card Number:"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/creditCardTitle" />
+
+    <TextView
+        android:id="@+id/card_holder_text"
+        android:layout_width="122dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:textColor="@color/cardview_light_background"
+        android:textColorHint="@color/cardview_light_background"
+        android:text="Card Holder:"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_number_text" />
+
+    <TextView
+        android:id="@+id/valid_thru_text"
+        android:layout_width="122dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="29dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:textColor="@color/cardview_light_background"
+        android:textColorHint="@color/cardview_light_background"
+        android:text="Valid Thru:"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_holder_text" />
+
+    <TextView
+        android:id="@+id/cvv_text"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:textColor="@color/cardview_light_background"
+        android:textColorHint="@color/cardview_light_background"
+        android:text="CVV:"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valid_thru_text" />
+
+    <TextView
+        android:id="@+id/creditCardTitle"
+        android:layout_width="138dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="13dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:textColor="@color/cardview_light_background"
+        android:textColorHint="@color/cardview_light_background"
+        android:text="Credit Card Info"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <EditText
+        android:id="@+id/cardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:textColor="@color/cardview_light_background"
+        android:textColorHint="@color/cardview_light_background"
+        android:ems="10"
+        android:hint="Input Card Number Here"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/card_number_text"
+        app:layout_constraintTop_toBottomOf="@+id/creditCardTitle" />
+
+    <EditText
+        android:id="@+id/cardHolderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="7dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:textColor="@color/cardview_light_background"
+        android:textColorHint="@color/cardview_light_background"
+        android:ems="10"
+        android:hint="Input Your Name Here"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/card_holder_text"
+        app:layout_constraintTop_toBottomOf="@+id/cardNumber" />
+
+    <EditText
+        android:id="@+id/CVV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="13dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:textColor="@color/cardview_light_background"
+        android:textColorHint="@color/cardview_light_background"
+        android:ems="10"
+        android:hint="Input CVV Code Here"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/cvv_text"
+        app:layout_constraintTop_toBottomOf="@+id/expiryDate" />
+
+    <EditText
+        android:id="@+id/expiryDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:textColor="@color/cardview_light_background"
+        android:textColorHint="@color/cardview_light_background"
+        android:ems="10"
+        android:hint="ex: 01/02"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/valid_thru_text"
+        app:layout_constraintTop_toBottomOf="@+id/cardHolderName" />
+
+    <TextView
+        android:id="@+id/statusBtn"
+        android:layout_width="271dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="256dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:textColor="@color/cardview_light_background"
+        android:textColorHint="@color/cardview_light_background"
+        android:hint="validation info here"
+        app:layout_constraintBottom_toTopOf="@+id/paymentSubmitButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

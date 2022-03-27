@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wood_panel"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="128dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="59dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon" />
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="238dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/cardview_light_background"
+        android:textColorHint="@color/cardview_light_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="238dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/cardview_light_background"
+        android:textColorHint="@color/cardview_light_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailHint" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="serif"
+        android:text="LOGIN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordHint" />
+
+    <Button
+        android:id="@+id/signUpBtnLGP"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="serif"
+        android:text="SIGN UP"
+        app:layout_constraintStart_toEndOf="@+id/loginBtn"
+        app:layout_constraintTop_toBottomOf="@+id/passwordHint" />
+
+    <ImageButton
+        android:id="@+id/googleLoginBtn"
+        android:layout_width="238dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="45dp"
+        android:contentDescription="google login in button"
+        android:src="@drawable/common_google_signin_btn_text_dark_normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
+
+    <TextView
+        android:id="@+id/emailHint"
+        android:layout_width="167dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="95dp"
+        android:ems="3"
+        android:inputType="textPersonName"
+        android:textColor="#FF5555"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailText" />
+
+    <TextView
+        android:id="@+id/passwordHint"
+        android:layout_width="167dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="95dp"
+        android:ems="3"
+        android:inputType="textPersonName"
+        android:textColor="#FF5555"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordText" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="131dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:text="© ABC Company"
+        android:textColor="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
